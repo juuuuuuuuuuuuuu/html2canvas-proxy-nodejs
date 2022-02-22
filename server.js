@@ -1,7 +1,10 @@
-const express = require('express');
-const functions = require('firebase-functions');
+var proxy = require('html2canvas-proxy');
+var express = require('express');
 
-const app = express();
-app.use('/', proxy());
+var app = express();
+var port = (process.env.PORT || 3000);
 
-export default functions.https.onRequest(app);
+app.use("/", proxy());
+
+console.log("Server running on port", port);
+app.listen(port);

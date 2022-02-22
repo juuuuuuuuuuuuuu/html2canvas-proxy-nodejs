@@ -22,7 +22,8 @@
   "homepage": "https://github.com/niklasvh/html2canvas-proxy-nodejs",
   "dependencies": {
     "cors": "2.8.4",
-    "request": "2.87.0"
+    "request": "2.87.0",
+    "html2canvas-proxy": "1.0.1"
   },
   "peerDependencies": {
     "express": "4.x"
